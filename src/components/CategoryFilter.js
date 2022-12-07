@@ -18,9 +18,6 @@ function Search({ details }) {
                     console.log('checked');
                     setSearchField("starter");
                   }
-
-
-                  
                   else {
                     console.log('unchecked');
                     setSearchField("");
@@ -43,8 +40,9 @@ function Search({ details }) {
                 }}
             />{" "}
             show side
-
         </div>
+
+        
         
       
         <MenuItems items={filtered}/>
