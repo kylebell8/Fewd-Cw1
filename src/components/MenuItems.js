@@ -1,27 +1,18 @@
 import React from "react";
-import { Link, Outlet } from "react-router-dom";
+import Accordion from "react-bootstrap/Accordion";
+import Item from "./Item";
 
 const MenuItems = ({ items }) => {
   return (
-    <>
-        <div className="container-fluid">
-        <div className="row">
-          <div className="col-2 submenu">
-            <ul>
-              {items.map((item) => (
-                <li key={item.id}>
-                  <Link to={item.name}>{item.name}</Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div className="col-6" style={{margin:"5%"}}>
-            <Outlet />
-          </div>
-          <div className="col-4"></div>
-        </div>
-      </div>
-    </>
+    <Accordion style={{width:50+'%'}}>
+      {items.map((food, index) => {
+        return (
+          <Accordion.Item eventKey={index} key={index}>
+            <Item food={food} />
+          </Accordion.Item>
+        );
+      })}
+    </Accordion>
   );
 };
 export default MenuItems;
