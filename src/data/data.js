@@ -14,7 +14,7 @@ export const items = [
       name: "sandwiches",
       description: "with a variety of fillings",
       price: "2.50",
-      category: ("main" , "starter"),
+      category: ("starter and side"),
       ingredients :"",
       allergens: "",
       available: "no",

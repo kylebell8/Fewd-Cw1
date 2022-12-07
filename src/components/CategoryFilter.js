@@ -9,21 +9,43 @@ function Search({ details }) {
   return (
     <div>
         <div>
+
+          
               <input
                 type="checkbox"
                 onChange={event => {
                   if (event.target.checked) {
-                    console.log('✅');
-                    setSearchField("main");
-                  }                   
+                    console.log('checked');
+                    setSearchField("starter");
+                  }
+
+
+                  
                   else {
-                    console.log('⛔️');
+                    console.log('unchecked');
                     setSearchField("");
                   }
                 }}
             />{" "}
-            show mains
+            show starter
+
+            <input
+                type="checkbox"
+                onChange={event => {
+                  if (event.target.checked) {
+                    console.log('checked');
+                    setSearchField("side");
+                  }
+                  else {
+                    console.log('unchecked');
+                    setSearchField("");
+                  }
+                }}
+            />{" "}
+            show side
+
         </div>
+        
       
         <MenuItems items={filtered}/>
     </div>
