@@ -14,19 +14,19 @@ function Search({ details }) {
 
   const dairyData = (data) => {
     return data.filter((entry) => {
-      return entry.allergens((item) => { return item.allergens.includes("Dairy") })
+      return !entry.allergens.includes("Dairy")
     })
 
   }
   const glutenData = (data) => {
     return data.filter((entry) => {
-      return entry.allergens((item) => { return item.allergens.includes("Gluten") })
+      return !entry.allergens.includes("Gluten")
     })
 
   }
   const nutsData = (data) => {
     return data.filter((entry) => {
-      return entry.allergens((item) => { return item.allergens.includes("Nuts") })
+      return !entry.allergens.includes("Nuts")
     })
 
   }
@@ -61,14 +61,14 @@ function Search({ details }) {
         onChange={(e) => setSearchField(e.target.value)}
       /> </div>
       
-      <div> <label> Dairy </label> <input type="checkbox" value={filterDairy} onClick={() => setFilterDairy(filterDairy)}
+      <div> <label> Dairy </label> <input type="checkbox" value={filterDairy} onClick={() => setFilterDairy(!filterDairy)}
 
       /></div>
-      <div> <label> Gluten </label> <input type="checkbox" value={filterGluten} onClick={() => setFilterGluten(filterGluten)}
+      <div> <label> Gluten </label> <input type="checkbox" value={filterGluten} onClick={() => setFilterGluten(!filterGluten)}
 
       /></div>
 
-      <div> <label> Nuts </label> <input type="checkbox" value={filterNuts} onClick={() => setFilterNuts(filterNuts)}
+      <div> <label> Nuts </label> <input type="checkbox" value={filterNuts} onClick={() => setFilterNuts(!filterNuts)}
 
       /></div>
 
