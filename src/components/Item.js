@@ -12,6 +12,7 @@ const Item = ({ food }) => {
       <p>{food.category}</p>
         <p>{food.description}</p>
         <p>{food.price}</p>
+        <p>{food.allergens}</p>
 
         <p><FetchNutrition query={food.name} /></p>
         <p><Review food={food}/></p>
