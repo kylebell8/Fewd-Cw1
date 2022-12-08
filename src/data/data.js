@@ -6,8 +6,9 @@ export const items = [
       price: "2.50",
       category: "dessert",
       ingredients : "",
-      allergens: "",
+      allergens: ["Dairy"],
       available: "no",
+      review: [],
     },
     {
       id: "2",
@@ -16,8 +17,9 @@ export const items = [
       price: "2.50",
       category: ("starter and side"),
       ingredients :"",
-      allergens: "",
+      allergens: ["Gluten"],
       available: "no",
+      review: [],
     },
     {
       id: "3",
@@ -26,8 +28,9 @@ export const items = [
       price: "3.50",
       category: "side",
       ingredients :"",
-      allergens: "",
+      allergens: ["Nuts"],
       available: "yes",
+      review: [],
     },
     {
       id: "4",
@@ -38,6 +41,7 @@ export const items = [
       ingredients :"",
       allergens: "",
       available: "yes",
+      review: [],
     },
     {
       id: "5",
@@ -48,6 +52,7 @@ export const items = [
       ingredients :"",
       allergens: "",
       available: "yes",
+      review: [],
     },
     {
       id: "6",
@@ -58,6 +63,7 @@ export const items = [
       ingredients :"",
       allergens: "",
       available: "yes",
+      review: [],
     },
     {
       id: "7",
@@ -68,6 +74,7 @@ export const items = [
       ingredients :"",
       allergens: "",
       available: "yes",
+      review: [],
     },
     {
       id: "8",
@@ -78,6 +85,7 @@ export const items = [
       ingredients :"",
       allergens: "",
       available: "yes",
+      review: [],
     },
     {
       id: "9",
@@ -88,6 +96,7 @@ export const items = [
       ingredients :"",
       allergens: "",
       available: "yes",
+      review: [],
     },
     {
       id: "10",
@@ -98,6 +107,7 @@ export const items = [
       ingredients :"",
       allergens: "",
       available: "yes",
+      review: [],
     },
     {
       id: "11",
@@ -108,6 +118,7 @@ export const items = [
       ingredients :"",
       allergens: "",
       available: "yes",
+      review: [],
     },
     {
       id: "12",
@@ -118,6 +129,7 @@ export const items = [
       ingredients :"",
       allergens: "",
       available: "yes",
+      review: [],
     },
     {
       id: "13",
@@ -128,6 +140,7 @@ export const items = [
       ingredients :"",
       allergens: "",
       available: "yes",
+      review: [],
     },
     {
       id: "14",
@@ -138,6 +151,7 @@ export const items = [
       ingredients :"",
       allergens: "",
       available: "yes",
+      review: [],
     },
     {
       id: "15",
@@ -148,6 +162,7 @@ export const items = [
       ingredients :"",
       allergens: "",
       available: "yes",
+      review: [],
     },
     {
       id: "16",
@@ -158,6 +173,7 @@ export const items = [
       ingredients :"",
       allergens: "",
       available: "yes",
+      review: [],
     },
     {
       id: "17",
@@ -168,6 +184,7 @@ export const items = [
       ingredients :"",
       allergens: "",
       available: "yes",
+      review: [],
     },
   ];
   
