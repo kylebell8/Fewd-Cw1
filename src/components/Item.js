@@ -13,11 +13,12 @@ const Item = ({ food }) => {
         <p>{food.description}</p>
         <p>{food.price}</p>
         <p>{food.allergens}</p>
-
+          <accordion-item>
+            
         <p><FetchNutrition query={food.name} /></p>
         <p><Review food={food}/></p>
         <p>{food.review}</p>
-
+        </accordion-item>
       </Accordion.Body>
 
 </div>

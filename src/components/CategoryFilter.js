@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import MenuItems from "./MenuItems";
+
 function Search({ details }) {
   const [searchField, setSearchField] = useState("");
   const [filterDairy, setFilterDairy] = useState(false);
@@ -9,7 +10,6 @@ function Search({ details }) {
 
   const filtered = details.filter((entry) => {
     return entry.name.toLowerCase().includes(searchField.toLowerCase());
-
 });
 
   const dairyData = (data) => {
@@ -49,7 +49,7 @@ function Search({ details }) {
       }
       setDisplayData(result)
     }
-  }, [filtered, filterDairy, filterGluten, filterNuts])
+  }, [searchField, filterDairy, filterGluten, filterNuts])
 
   
   return (

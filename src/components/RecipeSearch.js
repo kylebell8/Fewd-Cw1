@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import MenuItems from "./MenuItems";
+import CatagoryFilter from "./CategoryFilter"
 function Search({ details }) {
     const [searchField, setSearchField] = useState("");
     const filtered = details.filter((entry) => {

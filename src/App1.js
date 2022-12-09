@@ -3,7 +3,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import StyledLayout from "./components/StyledLayout";
 import Home from "./components/Home";
 import Locations from "./components/Locations";
-import Search from "./components/Search";
 import RecipeSearch from "./components/RecipeSearch"
 import CategoryFilter from "./components/CategoryFilter"
 import List from "./components/List";
@@ -25,7 +24,6 @@ export default function App() {
             <Route path=":itemId" element={<Item items={items} />} />
           </Route> 
           <Route path="/locations" element={<Locations />}>
-            <Route path="search" element={<Search locations={restaurants}  />} />
             <Route path="list" element={<List locations={restaurants}  />} />
           </Route>
           <Route path="*" element={<NoPage />} />

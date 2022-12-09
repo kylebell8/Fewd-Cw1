@@ -6,7 +6,7 @@ export const items = [
       price: "2.50",
       category: "dessert",
       ingredients : "",
-      allergens: ["Dairy", "Gluten"],
+      allergens: ["Dairy", "Gluten", "Nuts"],
       available: "no",
       review: [],
     },
