@@ -15,18 +15,18 @@ const Layout = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/aboutus" className="nav-link">
-                About Us
+              <Link to="/recipes" className="nav-link">
+                Recipes
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/menu" className="nav-link">
-                Menu
+              <Link to="/shopping" className="nav-link">
+                Shopping List
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="locations" className="nav-link">
-                Our Locations
+              <Link to="/menus" className="nav-link">
+                Menus
               </Link>
             </li>
           </ul>

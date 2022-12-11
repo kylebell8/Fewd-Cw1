@@ -19,10 +19,6 @@ const Review = ({ food }) => {
                 </input>
                 <button onClick={() => handleClick()} disabled={reviewText === 0}> Add Review </button>
                 <p>{food.review}</p>
-
-
-
-
             </Accordion.Body>
         </div>
 

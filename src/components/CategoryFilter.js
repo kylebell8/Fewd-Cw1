@@ -30,6 +30,8 @@ function Search({ details }) {
     })
 
   }
+
+  let result = filtered
   
   useEffect(() => {
     if (!filterDairy && !filterGluten && !filterNuts) {
@@ -37,7 +39,7 @@ function Search({ details }) {
     }
 
     else {
-      let result = filtered
+      
       if (filterDairy) {
         result = dairyData(result)
       }

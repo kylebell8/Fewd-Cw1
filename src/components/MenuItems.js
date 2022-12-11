@@ -15,6 +15,4 @@ const MenuItems = ({ items }) => {
     </Accordion>
   );
 };
-
-
 export default MenuItems;

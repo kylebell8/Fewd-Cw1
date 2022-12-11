@@ -9,6 +9,8 @@ export const items = [
       allergens: ["Dairy", "Gluten", "Nuts"],
       available: "no",
       review: [],
+      menu: [],
+      shopping: []
     },
     {
       id: "2",
@@ -20,6 +22,8 @@ export const items = [
       allergens: ["Dairy", "Gluten"],
       available: "no",
       review: [],
+      menu: [],
+      shopping: []
     },
     {
       id: "3",
@@ -31,6 +35,8 @@ export const items = [
       allergens: ["Nuts"],
       available: "yes",
       review: [],
+      menu: [],
+      shopping: []
     },
     {
       id: "4",
@@ -42,6 +48,8 @@ export const items = [
       allergens: "",
       available: "yes",
       review: [],
+      menu: [],
+      shopping: []
     },
     {
       id: "5",
@@ -53,6 +61,8 @@ export const items = [
       allergens: "",
       available: "yes",
       review: [],
+      menu: [],
+      shopping: []
     },
     {
       id: "6",
@@ -64,6 +74,8 @@ export const items = [
       allergens: "",
       available: "yes",
       review: [],
+      menu: [],
+      shopping: []
     },
     {
       id: "7",
@@ -75,6 +87,8 @@ export const items = [
       allergens: "",
       available: "yes",
       review: [],
+      menu: [],
+      shopping: []
     },
     {
       id: "8",
@@ -86,6 +100,8 @@ export const items = [
       allergens: "",
       available: "yes",
       review: [],
+      menu: [],
+      shopping: []
     },
     {
       id: "9",
@@ -97,6 +113,8 @@ export const items = [
       allergens: "",
       available: "yes",
       review: [],
+      menu: [],
+      shopping: []
     },
     {
       id: "10",
@@ -108,6 +126,8 @@ export const items = [
       allergens: "",
       available: "yes",
       review: [],
+      menu: [],
+      shopping: []
     },
     {
       id: "11",
@@ -119,6 +139,8 @@ export const items = [
       allergens: "",
       available: "yes",
       review: [],
+      menu: [],
+      shopping: []
     },
     {
       id: "12",
@@ -130,6 +152,8 @@ export const items = [
       allergens: "",
       available: "yes",
       review: [],
+      menu: [],
+      shopping: []
     },
     {
       id: "13",
@@ -141,6 +165,8 @@ export const items = [
       allergens: "",
       available: "yes",
       review: [],
+      menu: [],
+      shopping: []
     },
     {
       id: "14",
@@ -152,6 +178,8 @@ export const items = [
       allergens: "",
       available: "yes",
       review: [],
+      menu: [],
+      shopping: []
     },
     {
       id: "15",
@@ -163,6 +191,8 @@ export const items = [
       allergens: "",
       available: "yes",
       review: [],
+      menu: [],
+      shopping: []
     },
     {
       id: "16",
@@ -174,6 +204,8 @@ export const items = [
       allergens: "",
       available: "yes",
       review: [],
+      menu: [],
+      shopping: []
     },
     {
       id: "17",
@@ -185,6 +217,8 @@ export const items = [
       allergens: "",
       available: "yes",
       review: [],
+      menu: [],
+      shopping: []
     },
   ];
   
