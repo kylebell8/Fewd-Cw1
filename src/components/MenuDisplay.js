@@ -1,17 +1,16 @@
-import React, { useState } from "react";
-import MenuItems from "./MenuItems";
+import React from "react";
 import CatagoryFilter from "./CategoryFilter"
 
 function menudisplay({ details }) {
     const menufilter = details.filter((entry) => {
-        return entry.menu.includes("menu");
+        return entry.menu.includes("menu" || "");
     });
     return (
         <div>
             <div>
                 
             </div>
-            <CatagoryFilter details={menufilter}/>
+            <CatagoryFilter details={menufilter} type={"menu"}/>
         </div>
         
     );

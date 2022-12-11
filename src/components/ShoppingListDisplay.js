@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import MenuItems from "./MenuItems";
+import React from "react";
 import CatagoryFilter from "./CategoryFilter"
 function shoppinglist({ details }) {
     const shoppingfilter = details.filter((entry) => {
@@ -7,10 +6,8 @@ function shoppinglist({ details }) {
     });
     return (
         <div>
-            <div>
-                
-            </div>
-            <CatagoryFilter details={shoppingfilter}/>
+           
+            <CatagoryFilter details={shoppingfilter} type={"shopping"}/>
         </div>
         
     );

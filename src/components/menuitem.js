@@ -23,8 +23,7 @@ const [OpenNutrition, SetOpenNutrition] = useState(false);
         
         <p><Review food={food}/></p>
         <p>{food.review}</p>
-        <button onClick={() =>  food.menu.push("menu") && console.log(food.menu)}> Add To Menu </button>
-        <button onClick={() =>  food.shopping.push("shopping") && console.log(food.shopping)}> Add To shopping </button>
+        <button onClick={() =>  food.menu = [] && console.log(food.menu)}> Remove from Menu </button>
       </Accordion.Body>
 </div>
 

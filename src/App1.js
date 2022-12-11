@@ -19,7 +19,7 @@ export default function App() {
           <Route index element={<Home />} />
           <Route path="aboutus" element={<AboutUs people={people} />}>
           </Route>
-            <Route path="recipes" element={<CategoryFilter details={items}/>} > 
+            <Route path="recipes" element={<CategoryFilter details={items} type={"recipe"}/>} > 
             <Route path=":itemId" element={<Item items={items} />} />
           </Route> 
           <Route path="/menus" element={<MenuFilter details={items}/>}>

@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import MenuItems from "./MenuItems";
 
-function Search({ details }) {
+function Search(params) {
+  const details = params.details
   const [searchField, setSearchField] = useState("");
   const [filterDairy, setFilterDairy] = useState(false);
   const [filterGluten, setFilterGluten] = useState(false);
@@ -10,7 +11,7 @@ function Search({ details }) {
 
   const filtered = details.filter((entry) => {
     return entry.name.toLowerCase().includes(searchField.toLowerCase());
-});
+  });
 
   const dairyData = (data) => {
     return data.filter((entry) => {
@@ -32,14 +33,14 @@ function Search({ details }) {
   }
 
   let result = filtered
-  
+
   useEffect(() => {
     if (!filterDairy && !filterGluten && !filterNuts) {
       setDisplayData(filtered)
     }
 
     else {
-      
+
       if (filterDairy) {
         result = dairyData(result)
       }
@@ -53,7 +54,7 @@ function Search({ details }) {
     }
   }, [searchField, filterDairy, filterGluten, filterNuts])
 
-  
+
   return (
     <div>
       <div> <input
@@ -62,7 +63,7 @@ function Search({ details }) {
         placeholder="Search ..."
         onChange={(e) => setSearchField(e.target.value)}
       /> </div>
-      
+
       <div> <label> Dairy </label> <input type="checkbox" value={filterDairy} onClick={() => setFilterDairy(!filterDairy)}
 
       /></div>
@@ -74,7 +75,11 @@ function Search({ details }) {
 
       /></div>
 
-      {displayData && <MenuItems items={displayData} />}
+      {displayData && <>
+        {params.type === "recipe" && <MenuItems type={"recipe"} items={displayData} />}
+        {params.type === "shopping" && <MenuItems type={"shopping"} items={displayData} />}
+        {params.type === "menu" && <MenuItems type={"menu"} items={displayData} />}
+      </>}
     </div>
 
 
