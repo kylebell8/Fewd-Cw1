@@ -32,6 +32,8 @@ function Search(params) {
 
   }
 
+  
+
   let result = filtered
 
   useEffect(() => {
@@ -64,16 +66,9 @@ function Search(params) {
         onChange={(e) => setSearchField(e.target.value)}
       /> </div>
 
-      <div> <label> Dairy </label> <input type="checkbox" value={filterDairy} onClick={() => setFilterDairy(!filterDairy)}
-
-      /></div>
-      <div> <label> Gluten </label> <input type="checkbox" value={filterGluten} onClick={() => setFilterGluten(!filterGluten)}
-
-      /></div>
-
-      <div> <label> Nuts </label> <input type="checkbox" value={filterNuts} onClick={() => setFilterNuts(!filterNuts)}
-
-      /></div>
+      <div> <label> Dairy </label> <input type="checkbox" value={filterDairy} onClick={() => setFilterDairy(!filterDairy)}/></div>
+      <div> <label> Gluten </label> <input type="checkbox" value={filterGluten} onClick={() => setFilterGluten(!filterGluten)}/></div>
+      <div> <label> Nuts </label> <input type="checkbox" value={filterNuts} onClick={() => setFilterNuts(!filterNuts)}/></div>
 
       {displayData && <>
         {params.type === "recipe" && <MenuItems type={"recipe"} items={displayData} />}
