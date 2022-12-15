@@ -13,7 +13,7 @@ const Item = ({ food }) => {
       <p>{food.category}</p>
         <p>{food.description}</p>
         <p>{food.allergens}</p>
-        
+        <button onClick={() =>  {food.shopping.splice(0, food.shopping.length)}}> Remove from Shopping List </button>
       </Accordion.Body>
 </div>
 

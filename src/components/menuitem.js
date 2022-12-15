@@ -6,6 +6,8 @@ import Review from "./Review";
 const Item = ({ food }) => {
 const [OpenNutrition, SetOpenNutrition] = useState(false);
 
+
+
   return (
     <div>
       
@@ -22,7 +24,7 @@ const [OpenNutrition, SetOpenNutrition] = useState(false);
         
         <p><Review food={food}/></p>
         <p>{food.review}</p>
-        <button onClick={() => food.menu.splice(0, food.menu.length)}> Remove from Menu </button>
+        <button onClick={() =>  {food.menu.splice(0, food.menu.length)}}> Remove from Menu </button>
       </Accordion.Body>
 </div>
 

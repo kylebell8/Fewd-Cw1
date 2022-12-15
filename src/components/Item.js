@@ -6,7 +6,6 @@ import Review from "./Review";
 const Item = ({ food }) => {
 const [OpenNutrition, SetOpenNutrition] = useState(false);
 
-
   return (
     <div>
       
@@ -18,16 +17,15 @@ const [OpenNutrition, SetOpenNutrition] = useState(false);
         <p>{food.price}</p>
         <p>{food.allergens}</p>
          
-        <button onClick={() => SetOpenNutrition(!OpenNutrition)}>Show Nutrition</button>
+        <button onClick={() => SetOpenNutrition(!OpenNutrition)}>Toggle Nutrition</button>
         {OpenNutrition && <FetchNutrition query={food.name} />}
         
         <p><Review food={food}/></p>
         <p>{food.review}</p>
         <button onClick={() =>  food.menu.splice(0, food.menu.length, "menu") && console.log(food.menu)}> Add To Menu </button>
-        <button onClick={() =>  food.shopping.push("shopping") && console.log(food.shopping)}> Add To shopping </button>
+        <button onClick={() =>  food.shopping.splice(0, food.shopping.length, "shopping") && console.log(food.shopping)}> Add To shopping </button>
       </Accordion.Body>
 </div>
-
 
 ); };
 export default Item;
